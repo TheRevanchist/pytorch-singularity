@@ -81,6 +81,17 @@ ENV CUDA_HOME /usr/local/cuda
         pandas \
         scipy \
         sklearn
+        
+    pip --no-cache-dir install \
+        Pillow \
+        h5py \
+        ipykernel \
+        jupyter \
+        matplotlib \
+        numpy \
+        pandas \
+        scipy \
+        sklearn    
 
     python3 -m ipykernel.kernelspec
     apt-get -y update 
@@ -89,6 +100,10 @@ ENV CUDA_HOME /usr/local/cuda
     pip3 install tqdm  \
                 Augmentor  \
                 virtualenv
+                
+    pip install tqdm  \
+                Augmentor  \
+                virtualenv            
 
     apt-get -y install python3-tk
 
@@ -105,7 +120,6 @@ ENV CUDA_HOME /usr/local/cuda
     pip3 install requests
     pip3 install randomgen
     pip3 install scikit-image
-    pip3 install opencv-python
     pip3 install tensorboard_logger
 
     pip install requests
@@ -114,9 +128,4 @@ ENV CUDA_HOME /usr/local/cuda
     pip install opencv-python
     pip install adversarial-vision-challenge
     pip install torch torchvision
-    pip install foolbox
-    pip install requests
-    pip install randomgen
-    pip install scikit-image
-    pip install opencv-python
     pip install tensorboard_logger
